@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cinematic Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-snap-type: y mandatory;
+    }
+
+    section {
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #dc2626;
+      border-radius: 10px;
+    }
+
+    .glow {
+      box-shadow: 0 0 25px rgba(220,38,38,0.25);
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white overflow-x-hidden">
+
+<!-- FLOAT NAV -->
+<div class="fixed right-5 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-4 z-50">
+  <a href="#editor" class="text-xs text-zinc-500 hover:text-red-500">Editor</a>
+  <a href="#designer" class="text-xs text-zinc-500 hover:text-red-500">Designer</a>
+  <a href="#cinematographer" class="text-xs text-zinc-500 hover:text-red-500">Cinematographer</a>
+</div>
+
+<!-- HERO -->
+<section class="h-screen flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
+
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(220,38,38,0.18),transparent_45%)]"></div>
+
+  <p class="text-red-500 tracking-[0.4em] text-xs mb-6 z-10">
+    FILM REEL 2026
+  </p>
+
+  <h1 class="text-5xl md:text-8xl font-black z-10">
+    Sidharth <span class="text-red-600">Perisetla</span>
+  </h1>
+
+  <p class="text-zinc-400 mt-6 max-w-xl z-10">
+    Crafting cinematic worlds through edits, visuals, and motion.
+  </p>
+
+  <a href="#editor"
+     class="mt-10 border border-red-600 px-6 py-3 rounded-full text-red-500 hover:bg-red-600 hover:text-white transition z-10">
+    Start Reel ↓
+  </a>
+</section>
+
+<!-- EDITOR -->
+<section id="editor" class="min-h-screen flex flex-col justify-center px-6 md:px-20 py-24 border-t border-red-950 relative">
+
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(220,38,38,0.12),transparent_60%)]"></div>
+
+  <div class="relative z-10">
+
+    <p class="text-red-500 tracking-[0.3em] text-xs">SCENE 01</p>
+    <h2 class="text-4xl md:text-7xl font-black mt-2">Editor</h2>
+    <p class="text-zinc-400 mt-4 mb-10">Cutting rhythm into emotion.</p>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <a href="https://www.instagram.com/reel/DMK7TKKvbfV/" target="_blank"
+         class="group bg-zinc-950 border border-red-900 rounded-2xl overflow-hidden hover:border-red-500 transition transform hover:scale-[1.03] glow">
+
+        <div class="h-40 flex items-center justify-center bg-gradient-to-br from-red-950/30 to-black">
+          <p class="text-red-500 text-xs tracking-[0.3em]">OPEN CUT</p>
+        </div>
+
+        <div class="p-5">
+          <h3 class="font-bold group-hover:text-red-500">Cinematic Reel I</h3>
+          <p class="text-zinc-500 text-sm mt-2">View on Instagram →</p>
+        </div>
+      </a>
+
+      <a href="https://www.instagram.com/reel/DMRrDG_BySC/" target="_blank"
+         class="group bg-zinc-950 border border-red-900 rounded-2xl overflow-hidden hover:border-red-500 transition transform hover:scale-[1.03] glow">
+
+        <div class="h-40 flex items-center justify-center bg-gradient-to-br from-red-950/30 to-black">
+          <p class="text-red-500 text-xs tracking-[0.3em]">OPEN CUT</p>
+        </div>
+
+        <div class="p-5">
+          <h3 class="font-bold group-hover:text-red-500">Cinematic Reel II</h3>
+          <p class="text-zinc-500 text-sm mt-2">View on Instagram →</p>
+        </div>
+      </a>
+
+      <a href="https://www.instagram.com/reel/DWsln8fyuQ-/" target="_blank"
+         class="group bg-zinc-950 border border-red-900 rounded-2xl overflow-hidden hover:border-red-500 transition transform hover:scale-[1.03] glow">
+
+        <div class="h-40 flex items-center justify-center bg-gradient-to-br from-red-950/30 to-black">
+          <p class="text-red-500 text-xs tracking-[0.3em]">OPEN CUT</p>
+        </div>
+
+        <div class="p-5">
+          <h3 class="font-bold group-hover:text-red-500">Cinematic Reel III</h3>
+          <p class="text-zinc-500 text-sm mt-2">View on Instagram →</p>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="mt-14 flex justify-end">
+      <a href="#designer"
+         class="border border-red-700 px-6 py-3 rounded-full text-red-500 hover:bg-red-600 hover:text-white transition">
+        Next Scene →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- DESIGNER -->
+<section id="designer" class="min-h-screen flex flex-col justify-center px-6 md:px-20 py-24 border-t border-red-950 relative">
+
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(220,38,38,0.12),transparent_60%)]"></div>
+
+  <div class="relative z-10">
+
+    <p class="text-red-500 tracking-[0.3em] text-xs">SCENE 02</p>
+    <h2 class="text-4xl md:text-7xl font-black mt-2">Designer</h2>
+    <p class="text-zinc-400 mt-4 mb-10">Designs dipped in neon and silence.</p>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <a href="https://www.instagram.com/p/DXi77xsE8GE/" target="_blank"
+         class="group bg-zinc-950 border border-red-900 rounded-2xl p-6 hover:border-red-500 transition glow">
+        <h3 class="group-hover:text-red-500 font-bold">Visual Design I</h3>
+      </a>
+
+      <a href="https://www.instagram.com/reel/DU3qmXzk-4r/" target="_blank"
+         class="group bg-zinc-950 border border-red-900 rounded-2xl p-6 hover:border-red-500 transition glow">
+        <h3 class="group-hover:text-red-500 font-bold">Motion Design II</h3>
+      </a>
+
+    </div>
+
+    <div class="mt-14 flex justify-end">
+      <a href="#cinematographer"
+         class="border border-red-700 px-6 py-3 rounded-full text-red-500 hover:bg-red-600 hover:text-white transition">
+        Next Scene →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CINEMATOGRAPHER -->
+<section id="cinematographer" class="min-h-screen flex flex-col justify-center px-6 md:px-20 py-24 border-t border-red-950 relative">
+
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(220,38,38,0.12),transparent_60%)]"></div>
+
+  <div class="relative z-10">
+
+    <p class="text-red-500 tracking-[0.3em] text-xs">SCENE 03</p>
+    <h2 class="text-4xl md:text-7xl font-black mt-2">Cinematographer</h2>
+    <p class="text-zinc-400 mt-4 mb-10">Frames that breathe like midnight streets.</p>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <a href="https://www.instagram.com/reel/DVIXOKkEpZ_/" target="_blank"
+         class="group bg-zinc-950 border border-red-900 rounded-2xl p-6 hover:border-red-500 transition glow">
+        <h3 class="group-hover:text-red-500 font-bold">Frame Story I</h3>
+      </a>
+
+      <a href="https://www.instagram.com/reel/DT0l1ENkr1L/" target="_blank"
+         class="group bg-zinc-950 border border-red-900 rounded-2xl p-6 hover:border-red-500 transition glow">
+        <h3 class="group-hover:text-red-500 font-bold">Frame Story II</h3>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<section class="h-[40vh] flex items-center justify-center border-t border-red-950 text-zinc-500 text-sm">
+  End of Reel • Sidharth Perisetla
+</section>
+
+</body>
+</html>
